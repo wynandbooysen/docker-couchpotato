@@ -1,7 +1,6 @@
 FROM alpine:latest
 MAINTAINER Wynand Booysen
 
-
 #Installation
 RUN apk -U upgrade && \
     apk -U add \
@@ -16,7 +15,7 @@ RUN apk -U upgrade && \
     rm -rf /var/cache/apk/*
 
 #Volumes
-VOLUME ["/config", "/downloads", "movies"]
+VOLUME ["/config", "/downloads", "/movies"]
 
 #Ports
 EXPOSE 5050
